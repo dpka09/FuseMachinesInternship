@@ -22,13 +22,58 @@ This is a simple Flask application that demonstrates basic CRUD (Create, Read, U
    ```bash
    pip install flask flask-sqlalchemy marshmallow marshmallow-sqlalchemy
 
-
 ### Set up your PostgreSQL database. Update the app.config['SQLALCHEMY_DATABASE_URI'] in the code with your database credentials:
-   ```bash
-   postgresql://<username>:<password>@<host>:<port>/<database_name>
+
+         postgresql://<username>:<password>@<host>:<port>/<database_name>
+
+### Running the Application
+1. Navigate to the directory containing the application file.
+
+2. Run the Flask app:
+      python <filename>.py
+
+3. Open your browser or API testing tool (like Postman) and go to http://127.0.0.1:3000.
+
+### API Endpoints
+**Base URL**
+
+         http://127.0.0.1:3000
+
+### Endpoints
+![image](https://github.com/user-attachments/assets/f39dd867-ed11-4bc9-b0b5-18e51239c4ed)
 
 
+### Example Payloads
+***POST Request***
+
+{
+    "name": "John Doe",
+    "address": "123 Main Street",
+    "age": 30,
+    "phone": 1234567890
+}
 
 
+***PUT Request***
+
+{
+    "name": "Jane Smith",
+    "age": 28
+}
 
 
+### Additional Notes ###
+
+- ***The Info model includes the following fields:***
+
+      - id (Integer): Primary key
+
+      - name (String): Name of the individual
+
+      - address (String): Address of the individual
+
+      - age (Integer): Age of the individual
+
+      - phone (Integer): Phone number of the individual
+
+- ***Ensure your database is running and properly configured before starting the application.***
