@@ -32,7 +32,3 @@ This is a simple Flask application that demonstrates basic CRUD (Create, Read, U
 
 
 
-
-
-
-
